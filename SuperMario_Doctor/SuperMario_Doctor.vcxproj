@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f04e14d3-f423-4264-8a09-583cf23e3ef3}</ProjectGuid>
+    <RootNamespace>SuperMarioDoctor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Admin\source\repos\SuperMario_Doctor\SDL2_image-2.0.5\include;C:\Users\Admin\source\repos\SuperMario_Doctor\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Admin\source\repos\SuperMario_Doctor\SDL2_image-2.0.5\lib\x86;C:\Users\Admin\source\repos\SuperMario_Doctor\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\SDL2_image-2.0.5\include;.\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\SDL2_image-2.0.5\lib\x86;.\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\SDL2\include;.\SDL2_image-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\SDL2_image-2.0.5\lib\x86;.\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Scripts\Collision.cpp" />
+    <ClCompile Include="Scripts\Game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Scripts\Map.cpp" />
+    <ClCompile Include="Scripts\TextureManager.cpp" />
+    <ClCompile Include="Scripts\Vector2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scripts\Collision.h" />
+    <ClInclude Include="Scripts\ECS\Animation.h" />
+    <ClInclude Include="Scripts\ECS\ColliderComponent.h" />
+    <ClInclude Include="Scripts\ECS\EnemyController.h" />
+    <ClInclude Include="Scripts\ECS\KeyboardController.h" />
+    <ClInclude Include="Scripts\ECS\TransformComponent.h" />
+    <ClInclude Include="Scripts\ECS\Components.h" />
+    <ClInclude Include="Scripts\ECS\ECS.h" />
+    <ClInclude Include="Scripts\Game.h" />
+    <ClInclude Include="Scripts\Map.h" />
+    <ClInclude Include="Scripts\TextureManager.h" />
+    <ClInclude Include="Scripts\ECS\SpriteComponent.h" />
+    <ClInclude Include="Scripts\Vector2D.h" />
+    <ClInclude Include="SDL2\include\begin_code.h" />
+    <ClInclude Include="SDL2\include\close_code.h" />
+    <ClInclude Include="SDL2\include\SDL.h" />
+    <ClInclude Include="SDL2\include\SDL_assert.h" />
+    <ClInclude Include="SDL2\include\SDL_atomic.h" />
+    <ClInclude Include="SDL2\include\SDL_audio.h" />
+    <ClInclude Include="SDL2\include\SDL_bits.h" />
+    <ClInclude Include="SDL2\include\SDL_blendmode.h" />
+    <ClInclude Include="SDL2\include\SDL_clipboard.h" />
+    <ClInclude Include="SDL2\include\SDL_config.h" />
+    <ClInclude Include="SDL2\include\SDL_config_android.h" />
+    <ClInclude Include="SDL2\include\SDL_config_iphoneos.h" />
+    <ClInclude Include="SDL2\include\SDL_config_macosx.h" />
+    <ClInclude Include="SDL2\include\SDL_config_minimal.h" />
+    <ClInclude Include="SDL2\include\SDL_config_pandora.h" />
+    <ClInclude Include="SDL2\include\SDL_config_psp.h" />
+    <ClInclude Include="SDL2\include\SDL_config_windows.h" />
+    <ClInclude Include="SDL2\include\SDL_config_winrt.h" />
+    <ClInclude Include="SDL2\include\SDL_config_wiz.h" />
+    <ClInclude Include="SDL2\include\SDL_copying.h" />
+    <ClInclude Include="SDL2\include\SDL_cpuinfo.h" />
+    <ClInclude Include="SDL2\include\SDL_egl.h" />
+    <ClInclude Include="SDL2\include\SDL_endian.h" />
+    <ClInclude Include="SDL2\include\SDL_error.h" />
+    <ClInclude Include="SDL2\include\SDL_events.h" />
+    <ClInclude Include="SDL2\include\SDL_filesystem.h" />
+    <ClInclude Include="SDL2\include\SDL_gamecontroller.h" />
+    <ClInclude Include="SDL2\include\SDL_gesture.h" />
+    <ClInclude Include="SDL2\include\SDL_haptic.h" />
+    <ClInclude Include="SDL2\include\SDL_hints.h" />
+    <ClInclude Include="SDL2\include\SDL_joystick.h" />
+    <ClInclude Include="SDL2\include\SDL_keyboard.h" />
+    <ClInclude Include="SDL2\include\SDL_keycode.h" />
+    <ClInclude Include="SDL2\include\SDL_loadso.h" />
+    <ClInclude Include="SDL2\include\SDL_log.h" />
+    <ClInclude Include="SDL2\include\SDL_main.h" />
+    <ClInclude Include="SDL2\include\SDL_messagebox.h" />
+    <ClInclude Include="SDL2\include\SDL_metal.h" />
+    <ClInclude Include="SDL2\include\SDL_mouse.h" />
+    <ClInclude Include="SDL2\include\SDL_mutex.h" />
+    <ClInclude Include="SDL2\include\SDL_name.h" />
+    <ClInclude Include="SDL2\include\SDL_opengl.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles2.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles2_gl2.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles2_gl2ext.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles2_gl2platform.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles2_khrplatform.h" />
+    <ClInclude Include="SDL2\include\SDL_opengl_glext.h" />
+    <ClInclude Include="SDL2\include\SDL_pixels.h" />
+    <ClInclude Include="SDL2\include\SDL_platform.h" />
+    <ClInclude Include="SDL2\include\SDL_power.h" />
+    <ClInclude Include="SDL2\include\SDL_quit.h" />
+    <ClInclude Include="SDL2\include\SDL_rect.h" />
+    <ClInclude Include="SDL2\include\SDL_render.h" />
+    <ClInclude Include="SDL2\include\SDL_revision.h" />
+    <ClInclude Include="SDL2\include\SDL_rwops.h" />
+    <ClInclude Include="SDL2\include\SDL_scancode.h" />
+    <ClInclude Include="SDL2\include\SDL_sensor.h" />
+    <ClInclude Include="SDL2\include\SDL_shape.h" />
+    <ClInclude Include="SDL2\include\SDL_stdinc.h" />
+    <ClInclude Include="SDL2\include\SDL_surface.h" />
+    <ClInclude Include="SDL2\include\SDL_system.h" />
+    <ClInclude Include="SDL2\include\SDL_syswm.h" />
+    <ClInclude Include="SDL2\include\SDL_test.h" />
+    <ClInclude Include="SDL2\include\SDL_test_assert.h" />
+    <ClInclude Include="SDL2\include\SDL_test_common.h" />
+    <ClInclude Include="SDL2\include\SDL_test_compare.h" />
+    <ClInclude Include="SDL2\include\SDL_test_crc32.h" />
+    <ClInclude Include="SDL2\include\SDL_test_font.h" />
+    <ClInclude Include="SDL2\include\SDL_test_fuzzer.h" />
+    <ClInclude Include="SDL2\include\SDL_test_harness.h" />
+    <ClInclude Include="SDL2\include\SDL_test_images.h" />
+    <ClInclude Include="SDL2\include\SDL_test_log.h" />
+    <ClInclude Include="SDL2\include\SDL_test_md5.h" />
+    <ClInclude Include="SDL2\include\SDL_test_memory.h" />
+    <ClInclude Include="SDL2\include\SDL_test_random.h" />
+    <ClInclude Include="SDL2\include\SDL_thread.h" />
+    <ClInclude Include="SDL2\include\SDL_timer.h" />
+    <ClInclude Include="SDL2\include\SDL_touch.h" />
+    <ClInclude Include="SDL2\include\SDL_types.h" />
+    <ClInclude Include="SDL2\include\SDL_version.h" />
+    <ClInclude Include="SDL2\include\SDL_video.h" />
+    <ClInclude Include="SDL2\include\SDL_vulkan.h" />
+    <ClInclude Include="SDL2_image-2.0.5\include\SDL_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Dirt.png" />
+    <Image Include="Assets\end_screen.png" />
+    <Image Include="Assets\fire.png" />
+    <Image Include="Assets\flag.png" />
+    <Image Include="Assets\goomba.png" />
+    <Image Include="Assets\Grass.png" />
+    <Image Include="Assets\Mario_anims.png" />
+    <Image Include="Assets\Mario_Idle.png" />
+    <Image Include="Assets\Player.png" />
+    <Image Include="Assets\syringe.png" />
+    <Image Include="Assets\Water.png" />
+    <Image Include="Assets\win_screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libpng16-16.dll" />
+    <None Include="SDL2.dll" />
+    <None Include="SDL2\include\SDL_config.h.in" />
+    <None Include="SDL2\lib\x64\SDL2.dll" />
+    <None Include="SDL2\lib\x86\SDL2.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x64\libjpeg-9.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x64\libpng16-16.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x64\libtiff-5.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x64\libwebp-7.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x64\SDL2_image.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x64\zlib1.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x86\libjpeg-9.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x86\libpng16-16.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x86\libtiff-5.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x86\libwebp-7.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x86\SDL2_image.dll" />
+    <None Include="SDL2_image-2.0.5\lib\x86\zlib1.dll" />
+    <None Include="SDL2_image.dll" />
+    <None Include="zlib1.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SDL2_image-2.0.5\lib\x64\LICENSE.jpeg.txt" />
+    <Text Include="SDL2_image-2.0.5\lib\x64\LICENSE.png.txt" />
+    <Text Include="SDL2_image-2.0.5\lib\x64\LICENSE.tiff.txt" />
+    <Text Include="SDL2_image-2.0.5\lib\x64\LICENSE.webp.txt" />
+    <Text Include="SDL2_image-2.0.5\lib\x64\LICENSE.zlib.txt" />
+    <Text Include="SDL2_image-2.0.5\lib\x86\LICENSE.jpeg.txt" />
+    <Text Include="SDL2_image-2.0.5\lib\x86\LICENSE.png.txt" />
+    <Text Include="SDL2_image-2.0.5\lib\x86\LICENSE.tiff.txt" />
+    <Text Include="SDL2_image-2.0.5\lib\x86\LICENSE.webp.txt" />
+    <Text Include="SDL2_image-2.0.5\lib\x86\LICENSE.zlib.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="SDL2\lib\x64\SDL2.lib" />
+    <Library Include="SDL2\lib\x64\SDL2main.lib" />
+    <Library Include="SDL2\lib\x64\SDL2test.lib" />
+    <Library Include="SDL2\lib\x86\SDL2.lib" />
+    <Library Include="SDL2\lib\x86\SDL2main.lib" />
+    <Library Include="SDL2\lib\x86\SDL2test.lib" />
+    <Library Include="SDL2_image-2.0.5\lib\x64\SDL2_image.lib" />
+    <Library Include="SDL2_image-2.0.5\lib\x86\SDL2_image.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
