@@ -51,8 +51,8 @@ public:
 		return false;
 	}
 
-	/*returns the opposite of the collisionCheck method in Map.cpp
-	if the map collisioncheck returns true ,you have not collided ,
+	/*returns the opposite of the collisionCheck method in Map.cpp.
+	If the map collisioncheck returns true ,you have not collided ,
 	if it returns false , you have collided */
 	bool collisionCheck(float x, float y) {
 		if (entity == nullptr){

@@ -48,12 +48,13 @@ public:
 				transform->velocity.setX(0);
 				//should be idle
 				sprite->Play("Walk");
-				sprite->spriteFlip = SDL_FLIP_NONE;
+				sprite->spriteFlip = SDL_FLIP_HORIZONTAL;
 				break;
 			case SDLK_d:
 				transform->velocity.setX(0);
 				//should be idle
 				sprite->Play("Walk");
+				sprite->spriteFlip = SDL_FLIP_NONE;
 				break;
 			default:
 				break;
