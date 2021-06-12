@@ -1,5 +1,8 @@
 #include "Scripts/Game.h"
 #include "Scripts/TextureManager.h"
+//#include <SDL/SDL.h>
+#include "SDL.h"
+
 
 Game* game = NULL;
 
